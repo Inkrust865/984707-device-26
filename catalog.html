@@ -50,13 +50,65 @@
 			</ul>
 
 			<section>
-				<h2>Фильтр</h2>
-				<!-- Здесь будет форма -->
+				<h2>Фильтр:</h2>
+				<ul>
+					<li>
+						<h3>Стоимость</h3>
+						<input type="range" min="0" max="8000" step="100" value="0">
+					</li>
+					<li>
+						<h3>Цвет</h3>
+						<ul>
+							<li>
+								<input type="checkbox" id="checkbox_1" checked>
+								<label for="checkbox_1">Черный</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox_2">
+								<label for="checkbox_2">Белый</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox_3" checked>
+								<label for="checkbox_3">Синий</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox_4" checked>
+								<label for="checkbox_4">Красный</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox_5">
+								<label for="checkbox_5">Розовый</label>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3>Bluetooth</h3>
+						<ul>
+							<li>
+								<input type="radio" id="radio_1" name="bluetooth" checked>
+								<label for="radio_1">Есть</label>
+							</li>
+							<li>
+								<input type="radio" id="radio_2" name="bluetooth">
+								<label for="radio_2">Нет</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<button type="submit">Показать</button>
 			</section>
 
 			<section>
-				<h2>Сортировка</h2>
-				<!-- Здесь будет сортировка -->
+				<h2>Сортировка:</h2>
+				<ul>
+					<li><button type="submit">По цене</button></li>
+					<li><button type="submit">По типу</button></li>
+					<li><button type="submit">По популярности</button></li>
+				</ul>
+				<ul>
+					<li><button type="submit">По возрастанию</button></li>
+					<li><button type="submit">По убыванию</button></li>
+				</ul>
 			</section>
 
 			<section>
@@ -84,7 +136,17 @@
 					</li>
 				</ul>
 				<div>
-					<!-- Здесь будет пагинация -->
+					<ul>
+						<li><a href="#">Назад</a></li>
+						<li>
+							<ul>
+								<li><a>1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Вперед</a></li>
+					</ul>
 				</div>
 			</section>
 		</main>
