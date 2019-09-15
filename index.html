@@ -7,11 +7,11 @@
   <body>
 		<header>
 			<nav>
-				<img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Device">
-				<input type="text" placeholder="Поиск по сайту">
+				<a><img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Device"></a>
+				<input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
 
 				<ul>
-					<li><button type="button">Войти</button></li>
+					<li><a href="#">Войти</a></li>
 				</ul>
 
 				<a href="#">Сравнить</a>
@@ -49,10 +49,10 @@
 		</header>
 
 		<main>
-			<h1>Интернет-магазин Device</h1>
+			<h1 class="visually-hidden">Интернет-магазин Device</h1>
 
 			<section>
-				<h2>Слайдер товаров</h2>
+				<h2 class="visually-hidden">Слайдер товаров</h2>
 				<ul>
 					<li>
 						<img src="img/products_slider/slider-1.png" width="384" height="486" alt="Изображение палки для селфи">
@@ -63,9 +63,9 @@
 						</p>
 						<a href="#">Подробнее</a>
 						<ul>
-							<li><button type="button">1</button></li>
-							<li><button type="button">2</button></li>
-							<li><button type="button">3</button></li>
+							<li><button type="button" aria-label="Перейти на первый слайд">1</button></li>
+							<li><button type="button" aria-label="Перейти на второй слайд">2</button></li>
+							<li><button type="button" aria-label="Перейти на третий слайд">3</button></li>
 						</ul>
 						<ul>
 							<li>
@@ -91,9 +91,9 @@
 						</p>
 						<a href="#">Подробнее</a>
 						<ul>
-							<li><button type="button">1</button></li>
-							<li><button type="button">2</button></li>
-							<li><button type="button">3</button></li>
+							<li><button type="button" aria-label="Перейти на первый слайд">1</button></li>
+							<li><button type="button" aria-label="Перейти на второй слайд">2</button></li>
+							<li><button type="button" aria-label="Перейти на третий слайд">3</button></li>
 						</ul>
 						<ul>
 							<li>
@@ -111,9 +111,9 @@
 						</p>
 						<a href="#">Подробнее</a>
 						<ul>
-							<li><button type="button">1</button></li>
-							<li><button type="button">2</button></li>
-							<li><button type="button">3</button></li>
+							<li><button type="button" aria-label="Перейти на первый слайд">1</button></li>
+							<li><button type="button" aria-label="Перейти на второй слайд">2</button></li>
+							<li><button type="button" aria-label="Перейти на третий слайд">3</button></li>
 						</ul>
 						<ul>
 							<li>
@@ -130,49 +130,61 @@
 			</section>
 
 			<section>
-				<h2>Популярные товары</h2>
+				<h2 class="visually-hidden">Популярные товары</h2>
 				<ul>
 					<li>
-						<div>
-							<img src="img/popular/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-						</div>
-						<h3>Виртуальная реальность</h3>
+						<a href="catalog.html">
+							<h3>Виртуальная реальность</h3>
+							<div>
+								<img src="img/popular/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+							</div>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-						</div>
-						<h3>Моноподы для селфи</h3>
+						<a href="catalog.html">
+							<h3>Моноподы для селфи</h3>
+							<div>
+								<img src="img/popular/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+							</div>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-						</div>
-						<h3>Экшн-камеры</h3>
+						<a href="catalog.html">
+							<h3>Экшн-камеры</h3>
+							<div>
+								<img src="img/popular/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+							</div>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-						</div>
-						<h3>Фитнес-браслеты</h3>
+						<a href="catalog.html">
+							<h3>Фитнес-браслеты</h3>
+							<div>
+								<img src="img/popular/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+							</div>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular/popular-5.svg" width="56" height="98" alt="Умные часы">
-						</div>
-						<h3>Умные часы</h3>
+						<a href="catalog.html">
+							<h3>Умные часы</h3>
+							<div>
+								<img src="img/popular/popular-5.svg" width="56" height="98" alt="Умные часы">
+							</div>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
-						</div>
-						<h3>Квадрокоптеры</h3>
+						<a href="catalog.html">
+							<h3>Квадрокоптеры</h3>
+							<div>
+								<img src="img/popular/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+							</div>
+						</a>
 					</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Слайдер услуг</h2>
+				<h2 class="visually-hidden">Слайдер услуг</h2>
 				<ul>
 					<li><button type="button">Доставка</button></li>
 					<li><button type="button">Гарантия</button></li>
@@ -201,7 +213,7 @@
 			</section>
 
 			<section>
-				<h2>Логотипы партнеров</h2>
+				<h2 class="visually-hidden">Логотипы партнеров</h2>
 				<ul>
 					<li><img src="img/partners_logotype/logo-1.png" width="260" height="100" alt="Логотип Vive"></li>
 					<li><img src="img/partners_logotype/logo-2.png" width="260" height="100" alt="Логотип GoPro"></li></li>
@@ -232,7 +244,7 @@
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
 				<p>
-					<img src="img/map.png" alt="Карта">
+					<button type="button"><img src="img/map.png" alt="Офис магазина по адресу г. Москва, ул. Строителей, 15"></button>
 				</p>
 				<button type="button">Напишите нам</button>
 			</section>
@@ -241,11 +253,11 @@
 		<footer>
 			<div>
 				<div>
-					<img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Device">
+					<a><img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Device"></a>
 				</div>
 				<div>
 					<ul>
-						<li><button type="button">Войти</button></li>
+						<li><a href="">Войти</a></li>
 					</ul>
 					<a href="#">Сравнить</a>
 					<a href="#">Корзина</a>
@@ -276,15 +288,41 @@
 				</div>
 				<div>
 					<ul>
-						<li><a href="#">Фейсбук</a></li>
-						<li><a href="#">Инстаграм</a></li>
-						<li><a href="#">Твиттер</a></li>
+						<li><a href="#" aria-label="Device в Фейсбук">Фейсбук</a></li>
+						<li><a href="#" aria-label="Device в Инстаграм">Инстаграм</a></li>
+						<li><a href="#" aria-label="Device в Твиттер">Твиттер</a></li>
 					</ul>
 				</div>
 				<div>
-					<a href="https://htmlacademy.ru/">HTML Academy</a>
+					<a href="https://htmlacademy.ru/" aria-label="Переход на сайт HTML Academy">HTML Academy</a>
 				</div>
 			</div>
 		</footer>
+
+		<section>
+			<h2 class="visually-hidden">Напишите нам сообщение</h2>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label for="user_name">Ваше имя:</label>
+					<input type="text" id="user_name" name="user_name" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label for="user_e-mail">Ваш e-mail:</label>
+					<input type="text" id="user_e-mail" name="user_e-mail" placeholder="email@example.com">
+				</p>
+				<p>
+					<label for="message">Текст письма:</label>
+					<textarea id="message" name="user_message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+				</p>
+				<button type="submit">Отправить</button>
+			</form>
+			<button type="button" aria-label="Закрыть окно">Х</button>
+		</section>
+
+		<section>
+			<h2 class="visually-hidden">Наше местоположение</h2>
+			<img src="img/map-big.png" width="960" height="559" alt="Офис магазина по адресу г. Москва, ул. Строителей, 15">
+			<button type="button" aria-label="Закрыть окно">Х</button>
+		</section>
   </body>
 </html>
