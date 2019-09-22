@@ -1,0 +1,514 @@
+@font-face {
+	font-family: "Gilroy-ExtraBold";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Gilroy-Light";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/gilroylight.woff2") format("woff2");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #464646;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font-family: "Gilroy-ExtraBold";
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #f0c52e;
+	border: none;
+}
+
+.button:hover,
+.button:focus {
+}
+
+.button:active {
+	opacity: 0.6;
+}
+
+.main-navigation {
+	color: #000000;
+
+	background-color: #f7e296;
+}
+
+.main-navigation input[class="search"] {
+	opacity: 0.3;
+
+	background-color: transparent;
+	border: none;
+}
+
+.main-navigation input[class="search"]:hover {
+	opacity: 0.6;
+}
+
+.main-navigation input[class="search"]:focus {
+	opacity: 1;
+
+	border-bottom: 2px solid #000000;
+	outline: none;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	opacity: 0.6;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	opacity: 0.3;
+}
+
+.link-uppercase {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.slider-goods-list {
+	list-style: none;
+}
+
+.slider-good-item b {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 47px;
+	line-height: 56px;
+	color: #000000;
+}
+
+.slider-navigation,
+.properties-list {
+	list-style: none;
+}
+
+.slider-good-item .property-value {
+	font-family: "Gilroy-Light";
+	font-size: 36px;
+	line-height: 48px;
+	color: #000000;
+}
+
+.popular-goods-list {
+	list-style: none;
+}
+
+.popular-goods h3 {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.popular-good-icon {
+	background-color: #f7e296;
+}
+
+.popular-good-item a {
+	color: #000000;
+}
+
+.popular-goods a:hover,
+.popular-goods a:focus {
+	color: #000000;
+}
+
+.popular-goods a:hover .popular-good-icon,
+.popular-goods a:focus .popular-good-icon {
+	background-color: #f0c52e;
+}
+
+.popular-goods a:active h3,
+.popular-goods a:active img {
+	opacity: 0.3;
+}
+
+.services {
+	background-color: #e5e5e5;
+}
+
+.services-navigation,
+.services-list {
+	list-style: none;
+}
+
+.services-button:hover,
+.services-button:focus {
+
+}
+
+.services-button:active {
+	color: #f7e184;
+
+	background-color: #000000;
+}
+
+.services h3 {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+}
+
+.partners-list {
+	list-style: none;
+}
+
+.index-columns h2 {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+}
+
+.about-us .delivery-partners-list {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 16px;
+	line-height: 40px;
+	color: #000000;
+}
+
+.button-map {
+	border: none;
+}
+
+.inner-header-logo:hover,
+.inner-header-logo:focus {
+	opacity: 0.6;
+}
+
+.inner-header-logo:active {
+	opacity: 0.3;
+}
+
+.page-title {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrubs a:focus {
+	opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+	opacity: 0.1;
+}
+
+.breadcrumbs-current {
+	opacity: 0.3;
+}
+
+.filters {
+	color: #000000;
+	font-size: 14px;
+	line-height: 40px;
+
+	background-color: #eeeeee;
+}
+
+.filters h2 {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+
+	background-color: #dbdbdb;
+}
+
+.filter-form fieldset {
+	border: none;
+}
+
+.filter-form legend,
+.filter-form h3 {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.filter-form ul {
+	list-style: none;
+}
+
+.filter-input:hover,
+.filter-input:focus {
+	opacity: 0.6;
+}
+
+.filter-input:disabled {
+	opacity: 0.25;
+}
+
+.filter-input:disabled + label {
+	color: #a6a6a6;
+}
+
+.sorting {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+
+	background-color: #ebebeb;
+}
+
+.sorting h2 {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sorting-list {
+	list-style: none;
+}
+
+.sorting-list button {
+	opacity: 0.3;
+
+	background-color: transparent;
+	border: none;
+}
+
+.sorting-list button:hover,
+.sorting-list button:focus {
+	opacity: 0.6;
+}
+
+.sorting-list button:active {
+	opacity: 1;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item-title {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.catalog-item-image {
+	background-color: #efefef;
+}
+
+.catalog-item-price {
+	font-family: "Gilroy-Light";
+	font-size: 16px;
+	line-height: 24px;
+	color: #464646;
+}
+
+.catalog-item .button-comparison {
+	font-size: 13px;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.catalog-item .button-comparison:hover,
+.catalog-item .button-comparison:focus {
+	opacity: 1;
+}
+
+.catalog-item .button-comparison:active {
+	opacity: 0.2;
+}
+
+.pagination-list {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	list-style: none;
+
+	background-color: #ebebeb;
+}
+
+.pagination-list a {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.pagination-list .button-back,
+.pagination-list .button-next,
+.pagination-list .button-current {
+	opacity: 1;
+}
+
+.pagination-list .button-back:hover,
+.pagination-list .button-back:focus,
+.pagination-list .button-next:hover,
+.pagination-list .button-next:focus {
+	background-color: #d9d9d9;
+}
+
+.pagination-list .button-back:active,
+.pagination-list .button-next:active {
+	opacity: 0.3;
+
+	background-color: #d9d9d9;
+}
+
+.pages-list .button-page:hover,
+.pages-list .button-page:focus {
+	opacity: 0.6;
+}
+
+.pages-list .button-page:active {
+	opacity: 1;
+}
+
+.inner-footer-logo:hover,
+.inner-footer-logo:focus {
+	opacity: 0.6;
+}
+
+.inner-footer-logo:active {
+	opacity: 0.3;
+}
+
+.main-footer {
+	color: #ffffff;
+
+	background-color: #464646;
+}
+
+.footer-links a {
+	color: #ffffff;
+	opacity: 0.7;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+	opacity: 1;
+}
+
+.footer-links a:active {
+	opacity: 0.3;
+}
+
+.footer-services-navigation ul,
+.footer-social ul {
+	list-style: none;
+	text-align: center;
+}
+
+.footer-services-navigation a {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #ffffff;
+	letter-spacing: 4px;
+}
+
+.footer-services-navigation a:hover,
+.footer-services-navigation a:focus {
+	opacity: 0.6;
+}
+
+.footer-services-navigation a:active {
+	opacity: 0.3;
+}
+
+.footer-social a,
+.footer-copyright a {
+	color: #b5b5b5;
+}
+
+.modal-feedback {
+	color: #000000;
+	font-size: 18px;
+	line-height: 24px;
+
+	background-color: #ffffff;
+}
+
+.modal-feedback label {
+	font-family: "Gilroy-ExtraBold";
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="e-mail"],
+.feedback-form textarea {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 400;
+	color: #464646;
+	opacity: 0.4;
+	font-size: 14px;
+	line-height: 18px;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form input[type="e-mail"]:hover,
+.feedback-form textarea:hover {
+	background-color: #ebebeb;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="e-mail"]:focus,
+.feedback-form textarea:focus {
+	opacity: 1;
+
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 3px solid #f7e296;
+	outline: none;
+}
