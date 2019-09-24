@@ -12,14 +12,27 @@
 	src: url("../fonts/gilroylight.woff2") format("woff2");
 }
 
+@font-face {
+	font-family: "OpenSans-Regular";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "OpenSans-Light";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/opensanslight.woff2") format("woff2");
+}
+
 body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: "OpenSans-Light", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-	font-weight: 300;
 	color: #464646;
 
 	background-color: #ffffff;
@@ -294,8 +307,7 @@ a {
 }
 
 .sorting {
-	font-family: "Open Sans", Arial, sans-serif;
-	font-weight: 400;
+	font-family: "OpenSans-Regular", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 
@@ -485,8 +497,7 @@ a {
 .feedback-form input[type="text"],
 .feedback-form input[type="e-mail"],
 .feedback-form textarea {
-	font-family: "Open Sans", Arial, sans-serif;
-	font-weight: 400;
+	font-family: "OpenSans-Regular", Arial, sans-serif;
 	color: #464646;
 	opacity: 0.4;
 	font-size: 14px;
