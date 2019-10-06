@@ -98,8 +98,8 @@
 							</li>
 							<li>
 								<ul class="sorting-second-list">
-									<li><button type="submit" aria-label="По возрастанию">По возрастанию</button></li>
-									<li><button type="submit" aria-label="По убыванию">По убыванию</button></li>
+									<li><button type="submit"><span class="visually-hidden">По возрастанию</span></button></li>
+									<li><button class="arrow-decrease" type="submit"><span class="visually-hidden">По убыванию</span></button></li>
 								</ul>
 							</li>
 						</ul>
@@ -115,7 +115,7 @@
 							<ul class="filter">
 								<li class="filter-option">
 									<h3 class="filter-legend">Стоимость</h3>
-									<input type="range" name="cost" min="0" max="8000" step="100" value="0" aria-label="Выбрать стоимость товара">
+									<input class="filter-range" type="range" name="cost" min="0" max="8000" step="100" value="0" aria-label="Выбрать стоимость товара">
 								</li>
 							</ul>
 							<fieldset class="filter">
@@ -147,11 +147,11 @@
 								<legend class="filter-legend">Bluetooth</legend>
 								<ul>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="radio" id="radio_1" name="bluetooth" value="in stock" 		checked>
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" id="radio_1" name="bluetooth" value="in stock" 		checked>
 										<label for="radio_1">Есть</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="radio" id="radio_2" value="not in stock" name="bluetooth"		>
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" id="radio_2" value="not in stock" name="bluetooth">
 										<label for="radio_2">Нет</label>
 									</li>
 								</ul>
@@ -180,8 +180,10 @@
 								</div>
 								
 								<img class="catalog-item-image" src="img/items/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-								<a class="button temporarily-hidden" href="#">В корзину</a>
-								<a class="button-comparison temporarily-hidden" href="#">Добавить к сравнению</a>
+								<div class="catalog-item-options">
+									<a class="button" href="#">В корзину</a>
+									<a class="button-comparison" href="#">Добавить к сравнению</a>
+								</div>
 							</li>
 							<li class="catalog-item">
 								<div class="catalog-item-description">
