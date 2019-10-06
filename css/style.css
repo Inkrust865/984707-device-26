@@ -77,10 +77,10 @@ img {
 	vertical-align: middle;
 	
 	width: 220px;
-	background-image: linear-gradient(180deg, transparent 18px, #f0c52e 18px, #f0c52e 26px, transparent 26px);
+	padding: 8px 0;
+	background-image: linear-gradient(180deg, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 	background-color: transparent;
 	border: none;
-	padding: 10px 0;
 
 	cursor: pointer;
 }
@@ -139,8 +139,6 @@ img {
 }
 
 .button-search {
-	
-
 	background-color: transparent;
 	border: 2px solid #000000;
 	padding: 14px 18px;
@@ -309,6 +307,10 @@ img {
 
 .slider-good-item .imagine-part {
 	margin-left: 30px;
+}
+
+.slider-good-item img {
+	background-color: transparent;
 }
 
 .second-slide .imagine-part {
@@ -486,7 +488,6 @@ img {
 	background-color: transparent;
 
 	width: 160px;
-	padding: 10px 0;
 }
 
 .services-button:active {
@@ -608,12 +609,16 @@ img {
 }
 
 .button-map {
+	width: 560px;
+	height: 222px;
 	margin-top: 10px;
 	margin-bottom: 70px;
 	padding: 0;
 	border: none;
 
-	background-color: transparent;
+	background-color: #e9e9e9;
+
+	cursor: pointer;
 }
 
 .inner-header-logo:hover,
@@ -1338,10 +1343,12 @@ body {
 
 .about-us {
 	width: 480px;
+	height: 573px;
 }
 
 .contacts {
 	width: 560px;
+	height: 573px;
 }
 
 .main-footer {
