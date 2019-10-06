@@ -496,6 +496,10 @@ img {
 	background-color: #000000;
 }
 
+.services-button:active .services-list li {
+	background-color: #000000;
+}
+
 .service-item {
 	position: relative;
 }
@@ -540,6 +544,22 @@ img {
 	list-style: none;
 }
 
+.partner-item .color-image {
+	display: none;
+}
+
+.partner-item:hover .black-image,
+.partner-item:focus .black-image,
+.partner-item:active .black-image {
+	display: none;
+}
+
+.partner-item:hover .color-image,
+.partner-item:focus .color-image,
+.partner-item:active .color-image {
+	display: block;
+}
+
 .index-columns h2 {
 	font-family: "Gilroy-ExtraBold";
 	font-size: 47px;
@@ -572,7 +592,10 @@ img {
 	margin-bottom: 35px;
 }
 
-.index-columns .button {
+.index-columns .button-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 260px;
 }
 
@@ -915,6 +938,14 @@ img {
 	opacity: 0.3;
 }
 
+.footer-decoration {
+	width: 80px;
+	height: 7px;
+
+	background-color: #ffc600;
+}
+
+
 .footer-social a,
 .footer-copyright a {
 	color: #b5b5b5;
@@ -930,7 +961,6 @@ img {
 .footer-social li:not(:last-of-type) {
 	margin-right: 22px;
 }
-
 .social-button {
 	opacity: 0.3;
 }
@@ -1338,7 +1368,7 @@ body {
 	justify-content: space-between;
 
 	width: 100%;
-	margin-bottom: 85px;
+	margin-bottom: 82px;
 }
 
 .about-us {
