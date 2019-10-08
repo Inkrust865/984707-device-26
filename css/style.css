@@ -34,7 +34,6 @@ body {
 	font-size: 15px;
 	line-height: 30px;
 	color: #464646;
-	letter-spacing: 0.1px;
 
 	background-color: #ffffff;
 }
@@ -80,6 +79,7 @@ input[type="radio"].visually-hidden {
 	
 	width: 220px;
 	padding: 8px 0;
+	padding-left: 3.7px;
 	background-image: linear-gradient(180deg, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 	background-color: transparent;
 	border: none;
@@ -110,6 +110,8 @@ input[type="radio"].visually-hidden {
 	background-color: transparent;
 	border: none;
 	border-bottom: 2px solid transparent;
+
+	letter-spacing: 0.1px;
 }
 
 .main-navigation input[class="search"]:hover {
@@ -131,8 +133,8 @@ input[type="radio"].visually-hidden {
 	content: "";
 
 	position: absolute;
-	top: 16px;
-	left: 3px;
+	top: 17px;
+	left: 4.5px;
 	width: 15px;
 	height: 15px;
 
@@ -206,7 +208,7 @@ input[type="radio"].visually-hidden {
 
 	position: absolute;
 	top: 4px;
-	left: 0;
+	left: 1.5px;
 	width: 13px;
 	height: 12px;
 
@@ -240,8 +242,8 @@ input[type="radio"].visually-hidden {
 	content: "";
 
 	position: absolute;
-	top: 9px;
-	left: 0;
+	top: 8px;
+	left: 1px;
 	width: 12px;
 	height: 12px;
 
@@ -259,7 +261,7 @@ input[type="radio"].visually-hidden {
 
 	position: absolute;
 	top: 3px;
-	right: 0;
+	right: 3px;
 	width: 16px;
 	height: 16px;
 
@@ -272,7 +274,7 @@ input[type="radio"].visually-hidden {
 	font-family: "Gilroy-ExtraBold";
 	font-size: 18px;
 	text-transform: uppercase;
-	letter-spacing: 4px;
+	letter-spacing: 3.6px;
 }
 
 .additional-site-nav {
@@ -300,7 +302,7 @@ input[type="radio"].visually-hidden {
 .slider-goods-wrapper {
 	width: 1160px;
 
-	background-image: linear-gradient(180deg, #f7e296 111px, #ffffff 111px);
+	background-image: linear-gradient(180deg, #f7e296 110px, #ffffff 110px);
 }
 
 .slider-goods-list {
@@ -328,7 +330,7 @@ input[type="radio"].visually-hidden {
 .slider-good-item .description-part {
 	position: relative;
 
-	padding-top: 79px;
+	padding-top: 78px;
 }
 
 .slider-good-item .description-part::before {
@@ -347,7 +349,7 @@ input[type="radio"].visually-hidden {
 	content: "01";
 
 	position: absolute;
-	top: -12px;
+	top: -15px;
 	right: 4px;
 	width: 165px;
 	height: 180px;
@@ -376,6 +378,7 @@ input[type="radio"].visually-hidden {
 	font-size: 47px;
 	line-height: 56px;
 	color: #000000;
+	letter-spacing: 0.6px;
 
 	position: relative;
 	z-index: 2;
@@ -385,7 +388,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	margin-top: 20px;
 
-	letter-spacing: 0.1px;
+	letter-spacing: 0.18px;
 }
 
 .first-slide p {
@@ -403,7 +406,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-navigation li {
-	margin-right: 20px;
+	margin-right: 21px;
 }
 
 .slider-navigation .slider-button {
@@ -506,15 +509,27 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.service-item p {
+	letter-spacing: 0.3px;
+}
+
 .service-item::after {
 	content: "";
 	position: absolute;
 	top: 12px;
-	right: 60px;
+	right: 65px;
 	width: 136px;
 	height: 164px;
 
 	background-image: url(../img/services_slider/delivery.svg);
+}
+
+.services h3 {
+	font-family: "Gilroy-ExtraBold";
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+	letter-spacing: 1.5px;
 }
 
 .warranty-item::after {
@@ -533,13 +548,6 @@ input[type="radio"].visually-hidden {
 	right: 70px;
 
 	background-image: url(../img/services_slider/credit.svg);
-}
-
-.services h3 {
-	font-family: "Gilroy-ExtraBold";
-	font-size: 47px;
-	line-height: 48px;
-	color: #000000;
 }
 
 .partners-list {
@@ -567,10 +575,11 @@ input[type="radio"].visually-hidden {
 	font-size: 47px;
 	line-height: 48px;
 	color: #000000;
+	letter-spacing: 0.3px;
 
 	margin: 0;
-	margin-bottom: 45px;
-	margin-top: 55px;
+	margin-bottom: 43px;
+	margin-top: 52px;
 }
 
 .index-columns section {
@@ -590,8 +599,10 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns p {
+	letter-spacing: 0.1px;
+
 	margin: 0;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 
 .index-columns .button-bottom {
@@ -618,14 +629,16 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	padding-left: 35px;
+
+	letter-spacing: 0.3px;
 }
 
 .delivery-partners-list li::before {
 	content: "";
 
 	position: absolute;
-	top: 16px;
-	left: 0;
+	top: 17px;
+	left: 2px;
 	width: 4px;
 	height: 4px;
 
@@ -660,6 +673,7 @@ input[type="radio"].visually-hidden {
 	font-size: 47px;
 	line-height: 48px;
 	color: #000000;
+	letter-spacing: 0.6px;
 }
 
 .breadcrumbs {
@@ -671,6 +685,7 @@ input[type="radio"].visually-hidden {
 
 	font-size: 14px;
 	line-height: 24px;
+	letter-spacing: 0.15px;
 
 	margin-right: 37px;
 }
@@ -721,7 +736,7 @@ input[type="radio"].visually-hidden {
 	font-family: "Gilroy-ExtraBold";
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 4px;
+	letter-spacing: 3.8px;
 	text-transform: uppercase;
 	color: #000000;
 
@@ -834,7 +849,7 @@ input[type="radio"].visually-hidden {
 	font-family: "Gilroy-ExtraBold";
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 4px;
+	letter-spacing: 3.6px;
 	text-transform: uppercase;
 	color: #000000;
 }
@@ -1028,7 +1043,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-links li {
-	margin-right: 40px;
+	margin-right: 44px;
 }
 
 .footer-links a span {
@@ -1070,6 +1085,10 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 }
 
+.footer-services-navigation {
+	margin-top: 5px;
+}
+
 .footer-services-navigation ul,
 .footer-social ul {
 	list-style: none;
@@ -1082,7 +1101,11 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;
 	text-transform: uppercase;
 	color: #ffffff;
-	letter-spacing: 4px;
+	letter-spacing: 3.5px;
+}
+
+.footer-services-navigation a {
+	margin-left: 3.5px;
 }
 
 .footer-services-navigation a:hover,
@@ -1162,7 +1185,7 @@ input[type="radio"].visually-hidden {
 
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 0;
 	width: 27px;
 	height: 35px;
 
@@ -1279,8 +1302,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 
-	margin-top: 5px;
-	margin-bottom: 45px;
+	margin-top: 10px;
+	margin-bottom: 25px;
 	/*---- Временно для сетки ----*/
 	min-height: 50px;
 }
@@ -1317,7 +1340,7 @@ body {
 }
 
 .additional-user-nav a:not(:last-of-type) {
-	margin-right: 35px;
+	margin-right: 40px;
 }
 
 .site-navigation {
@@ -1326,7 +1349,7 @@ body {
 
 	width: 1040px;
 	margin: 0;
-	margin-bottom: 45px;
+	margin-bottom: 50px;
 	padding: 0;
 
 	/*---- Временно для сетки ----*/
@@ -1359,10 +1382,15 @@ body {
 	padding: 0;
 }
 
+.feedback-nav li {
+	position: relative;
+	right: -5px;
+}
+
 .slider-goods {
 	width: 1040px;
 	margin: 0 auto;
-	margin-bottom: 100px;
+	margin-bottom: 95px;
 }
 
 .slider-goods-list {
@@ -1388,7 +1416,7 @@ body {
 	justify-content: space-between;
 
 	height: 40px;
-	margin-top: 40px;
+	margin-top: 42px;
 	margin-bottom: 50px;
 }
 
@@ -1419,7 +1447,9 @@ body {
 }
 
 .property-item .property-name {
-	margin-top: 10px;
+	margin-top: 7px;
+
+	letter-spacing: 0.15px;
 }
 
 .popular-goods {
@@ -1444,7 +1474,9 @@ body {
 
 .popular-good-item h3 {
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 35px;
+
+	letter-spacing: 0.2px;
 }
 
 .popular-good-icon {
@@ -1467,11 +1499,15 @@ body {
 
 .services-navigation {
 	position: relative;
-	width: 290px;
+	width: 278px;
 	margin: 0;
 	margin-top: 80px;
-	margin-bottom: 180px;
+	margin-bottom: 138px;
 	padding: 0;
+}
+
+.services-navigation li:not(:last-of-type) {
+	margin-bottom: 25px;
 }
 
 .services-navigation::after {
@@ -1515,7 +1551,7 @@ body {
 
 	margin: 0;
 	margin-top: 95px;
-	margin-bottom: 95px;
+	margin-bottom: 83px;
 	padding: 0;
 }
 
@@ -1538,7 +1574,7 @@ body {
 }
 
 .main-footer {
-	padding: 60px 0;
+	padding: 65px 0;
 	min-height: 200px;
 }
 
@@ -1552,6 +1588,7 @@ body {
 	justify-content: flex-end;
 
 	width: 480px;
+	margin-top: -2px;
 }
 
 .footer-links .user-navigation {
@@ -1563,7 +1600,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 
-	margin-top: 30px;
+	margin-top: 18px;
 	margin-bottom: 60px;
 }
 
@@ -1571,7 +1608,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 
-	width: 420px;
+	width: 430px;
 	margin: 0;
 	padding: 0;
 }
@@ -1614,8 +1651,8 @@ body {
 }
 
 .page-title {
-	margin-top: 40px;
-	margin-bottom: 25px;
+	margin-top: 35px;
+	margin-bottom: 24px;
 
 	min-height: 35px;
 }
@@ -1624,7 +1661,7 @@ body {
 	display: flex;
 
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 45px;
 	padding: 0;
 
 	min-height: 15px;
@@ -1642,7 +1679,7 @@ body {
 
 .filters-title-wrapper {
 
-	width: 265px;
+	width: 267px;
 	padding: 20px 0;
 }
 
@@ -1651,12 +1688,12 @@ body {
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 20px 0 20px 70px;
+	padding: 20px 0 20px 75px;
 }
 
 .sorting h2 {
 	min-width: 160px;
-	padding-right: 40px;
+	padding-right: 35px;
 	margin: 0;
 }
 
@@ -1698,7 +1735,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 
-	width: 265px;
+	width: 267px;
 	margin-top: 71px;
 }
 
