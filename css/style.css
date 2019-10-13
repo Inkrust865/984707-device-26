@@ -216,6 +216,32 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 }
 
+.inner-page .login-link {
+	padding-left: 0;
+}
+
+.inner-page .login-link::before {
+	display: none;
+}
+
+.inner-page .login-name {
+	position: relative;
+	padding-left: 27px;
+}
+
+.inner-page .login-name::before {
+	content: "";
+
+	position: absolute;
+	top: 4px;
+	left: 1.5px;
+	width: 13px;
+	height: 12px;
+
+	background-image: url(../img/icons/user.svg);
+	background-repeat: no-repeat;
+}
+
 .additional-user-nav a {
 	position: relative;
 	padding-left: 20px;
@@ -756,7 +782,7 @@ input[type="radio"].visually-hidden {
 	border-top: 2px solid #000000;
 	margin: 0;
 	padding-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .filter-form ul {
@@ -765,6 +791,7 @@ input[type="radio"].visually-hidden {
 
 .filter-range {
 	width: 100%;
+	min-height: 35px;
 }
 
 .filter-input + label {
@@ -914,10 +941,15 @@ input[type="radio"].visually-hidden {
 	font-family: "Gilroy-ExtraBold";
 	font-size: 18px;
 	line-height: 24px;
+	letter-spacing: 0.3px;
 	color: #000000;
 }
 
 .catalog-item-image {
+	position: relative;
+	top: 0;
+	left: 0;
+
 	width: 360px;
 	height: 380px;
 
@@ -1049,6 +1081,10 @@ input[type="radio"].visually-hidden {
 .footer-links a span {
 	color: #ffffff;
 	opacity: 0.7;
+}
+
+.footer-links .login-name::before {
+	background-image: url(../img/icons/footer-user.png);
 }
 
 .footer-links .login-link::before {
@@ -1327,7 +1363,7 @@ body {
 }
 
 .user-navigation li:not(:last-of-type) {
-	margin-right: 20px;
+	margin-right: 25px;
 }
 
 .additional-user-nav {
@@ -1716,7 +1752,7 @@ body {
 }
 
 .sorting-first-list li:not(:last-of-type) {
-	margin-right: 25px;
+	margin-right: 30px;
 }
 
 .sorting-second-list li:not(:last-of-type) {
@@ -1758,9 +1794,9 @@ body {
 .catalog {
 	background-color: #ffffff;
 
-	width: 800px;
+	width: 795px;
 	padding-top: 25px;
-	padding-left: 30px;
+	padding-left: 35px;
 }
 
 .catalog-list {
@@ -1777,7 +1813,7 @@ body {
 
 	width: 360px;
 	margin-top: 45px;
-	margin-left: 40px;
+	margin-left: 37.5px;
 }
 
 .catalog-item-description {
@@ -1797,7 +1833,7 @@ body {
 
 .pagination-list-wrapper {
 	width: 760px;
-	margin: 30px 0 75px 40px;
+	margin: 40px 0 75px 40px;
 }
 
 .pagination-list {
@@ -1815,14 +1851,23 @@ body {
 	padding: 23px;
 }
 
+.pagination-list .button-back {
+	padding-left: 28px;
+}
+
+.pagination-list .button-next {
+	padding-right: 28px;
+}
+
 .pages-list {
 	display: flex;
 
 	padding: 0;
+	padding-left: 5px;
 }
 
 .pages-list li:not(:last-of-type) {
-	margin-right: 30px;
+	margin-right: 25px;
 }
 
 /*---- Скрытые элементы - позже подкорректировать ----*/
