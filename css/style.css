@@ -428,10 +428,10 @@ input[type="radio"].visually-hidden {
 
 .slider-navigation {
 	padding: 0;
-	padding-right: 20px;
+	padding-right: 22px;
 }
 
-.slider-navigation li {
+.slider-navigation li:not(:last-of-type) {
 	margin-right: 21px;
 }
 
@@ -958,6 +958,32 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
+.catalog-item.new::before {
+	content: "new";
+
+	position: absolute;
+	top: 29px;
+	right: 27px;
+	width: 60px;
+	height: 60px;
+	
+	box-sizing: border-box;
+	padding: 17px 0;
+	border: 2px solid #d7d7d7;
+	border-radius: 50%;
+	background-color: transparent;
+
+	color: #d7d7d7;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Gilroy-ExtraBold";
+	font-size: 14px;
+	line-height: 24px;
+
+	z-index: 6;
+}
+
 .catalog-item-options {
 	display: none;
 
@@ -1237,16 +1263,102 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 }
 
+.modal {
+	position: fixed;
+
+	width: 960px;
+	left: 50%;
+	top: 30px;
+	margin-left: -480px;
+	box-sizing: border-box;
+
+	color: #000000;
+
+	background-color: #ffffff;
+	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+
+	z-index: 5;
+}
+
+.modal .button-close {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+	width: 55px;
+	height: 55px;
+
+	background-color: #f0c52e;
+	border-radius: 50%;
+	border: none;
+	opacity: 0.5;
+
+	cursor: pointer;
+}
+
+.modal .button-close:hover,
+.modal .button-close:focus {
+	opacity: 1;
+}
+
+.modal .button-close:active {
+	opacity: 0.3;
+	outline: none;
+}
+
+.modal .button-close::before,
+.modal .button-close::after {
+	content: "";
+
+	position: absolute;
+	top: 27px;
+	left: 13px;
+	width: 30px;
+	height: 2px;
+
+	background-color: #ffffff;
+}
+
+.modal .button-close::before {
+	transform: rotate(45deg);
+}
+
+.modal .button-close::after {
+	transform: rotate(-45deg);
+}
+
 .modal-feedback {
 	color: #000000;
 	font-size: 18px;
 	line-height: 24px;
 
 	background-color: #ffffff;
+
+	padding: 70px 100px;
+
+	display: none;
+}
+
+.modal-feedback p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 32px;
 }
 
 .modal-feedback label {
 	font-family: "Gilroy-ExtraBold";
+
+	margin-bottom: 7px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="e-mail"] {
+	width: 360px;
+	padding: 15px 20px;
+}
+
+.feedback-form textarea {
+	width: 760px;
+	padding: 15px 20px;
 }
 
 .feedback-form input[type="text"],
@@ -1259,7 +1371,8 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 
 	background-color: #f2f2f2;
-	border: none;
+	border: 3px solid transparent;
+	box-sizing: border-box;
 }
 
 .feedback-form input[type="text"]:hover,
@@ -1277,6 +1390,28 @@ input[type="radio"].visually-hidden {
 	background-color: transparent;
 	border: 3px solid #f7e296;
 	outline: none;
+}
+
+.feedback-form input[type="text"]:disabled,
+.feedback-form input[type="e-mail"]:disabled,
+.feedback-form textarea:disabled {
+	opacity: 0.5;
+
+	box-sizing: border-box;
+	background-color: #edb5b5;
+	outline: none;
+}
+
+.modal-map {
+	display: none;
+	height: 559px;
+
+	cursor: pointer;
+}
+
+.modal-map img {
+	width: 100%;
+	padding: 0;
 }
 
 /*------- Сеточные стили -------*/
@@ -1346,6 +1481,7 @@ body {
 
 .search-form {
 	display: flex;
+	flex-wrap: wrap;
 
 	width: 440px;
 	min-height: 49px;
@@ -1356,6 +1492,7 @@ body {
 
 .user-navigation {
 	display: flex;
+	flex-wrap: wrap;
 
 	width: 280px;
 	margin: 0;
@@ -1368,6 +1505,7 @@ body {
 
 .additional-user-nav {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-end;
 
 	width: 220px;
@@ -1376,11 +1514,12 @@ body {
 }
 
 .additional-user-nav a:not(:last-of-type) {
-	margin-right: 40px;
+	margin-right: 39px;
 }
 
 .site-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	width: 1040px;
@@ -1394,6 +1533,7 @@ body {
 
 .additional-site-nav {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .catalog-navigation {
@@ -1402,6 +1542,7 @@ body {
 
 .header-services-nav {
 	display: flex;
+	flex-wrap: wrap;
 
 	width: 360px;
 	padding: 0;
@@ -1449,16 +1590,17 @@ body {
 
 .good-item-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
-	height: 40px;
+	min-height: 40px;
 	margin-top: 42px;
 	margin-bottom: 50px;
 }
 
 .slider-navigation {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 
 	width: 80px;
@@ -1568,6 +1710,7 @@ body {
 }
 
 .service-item h3 {
+	width: 500px;
 	margin: 0;
 }
 
@@ -1583,12 +1726,21 @@ body {
 
 .partners-list {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 
 	margin: 0;
 	margin-top: 95px;
-	margin-bottom: 83px;
+	margin-bottom: 92px;
 	padding: 0;
+}
+
+.partner-item {
+	width: 260px;
+	height: 100px;
+}
+
+.partner-item:not(:nth-of-type(4n)) {
+	margin-right: 40px;
 }
 
 .index-columns {
@@ -1601,12 +1753,11 @@ body {
 
 .about-us {
 	width: 480px;
-	height: 573px;
+	min-height: 573px;
 }
 
 .contacts {
 	width: 560px;
-	height: 573px;
 }
 
 .main-footer {
@@ -1642,11 +1793,15 @@ body {
 
 .footer-services-navigation ul {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 
 	width: 430px;
 	margin: 0;
 	padding: 0;
+}
+
+.footer-services-navigation li:not(:nth-of-type(3n)) {
+	margin-right: 30px;
 }
 
 .footer-contacts {
@@ -1711,10 +1866,10 @@ body {
 
 .titles-wrapper .container {
 	display: flex;
+	align-items: center;
 }
 
 .filters-title-wrapper {
-
 	width: 267px;
 	padding: 20px 0;
 }
@@ -1724,6 +1879,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 
+	min-height: 70px;
+	box-sizing: border-box;
 	padding: 20px 0 20px 75px;
 }
 
@@ -1746,16 +1903,23 @@ body {
 .sorting-first-list,
 .sorting-second-list  {
 	display: flex;
+	flex-wrap: wrap;
 
 	padding: 0;
 	margin: 0;
+}
+
+.sorting-second-list {
+	justify-content: flex-end;
+
+	width: 41px;
 }
 
 .sorting-first-list li:not(:last-of-type) {
 	margin-right: 30px;
 }
 
-.sorting-second-list li:not(:last-of-type) {
+.sorting-second-list li:not(:nth-of-type(2n)) {
 	margin-right: 15px;
 }
 
@@ -1786,6 +1950,10 @@ body {
 	padding: 0;
 }
 
+.filter-form {
+	width: 200px;
+}
+
 .filter-form .button {
 	width: 200px;
 	text-align: center;
@@ -1809,6 +1977,7 @@ body {
 
 .catalog-item {
 	display: flex;
+	justify-content: flex-end;
 	flex-direction: column-reverse;
 
 	width: 360px;
@@ -1868,6 +2037,17 @@ body {
 
 .pages-list li:not(:last-of-type) {
 	margin-right: 25px;
+}
+
+.feedback-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.feedback-form p {
+	display: flex;
+	flex-direction: column;
 }
 
 /*---- Скрытые элементы - позже подкорректировать ----*/
