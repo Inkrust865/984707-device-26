@@ -233,9 +233,9 @@
 				<div class="container">
 					<h2 class="visually-hidden">Слайдер услуг</h2>
 					<ul class="services-navigation">
-						<li><button class="button services-button" type="button">Доставка</button></li>
-						<li><button class="button services-button" type="button">Гарантия</button></li>
-						<li><button class="button services-button" type="button">Кредит</button></li>
+						<li class="services-bookmark services-button-current"><button class="button services-button" type="button">Доставка</button></li>
+						<li class="services-bookmark"><button class="button services-button" type="button">Гарантия</button></li>
+						<li class="services-bookmark"><button class="button services-button" type="button">Кредит</button></li>
 					</ul>
 					<ul class="services-list">
 						<li class="service-item">
@@ -308,7 +308,7 @@
 						<button class="button-map" type="button">
 							<img src="img/map.png" width="560" height="222" alt="Офис магазина по адресу г. Москва, ул. Строителей, 15">
 						</button>
-						<button class="button button-bottom" type="button">Напишите нам</button>
+						<button class="button button-bottom button-feedback" type="button">Напишите нам</button>
 					</section>
 				</div>
 			</div>
@@ -372,16 +372,16 @@
 			<h2 class="visually-hidden">Напишите нам сообщение</h2>
 			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 				<p>
-					<label for="user_name">Ваше имя:</label>
-					<input type="text" id="user_name" name="user_name" placeholder="Имя Фамилия">
+					<label for="user-name">Ваше имя:</label>
+					<input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
 				</p>
 				<p>
-					<label for="user_e-mail">Ваш e-mail:</label>
-					<input type="e-mail" id="user_e-mail" name="user_e-mail" placeholder="email@example.com">
+					<label for="user-e-mail">Ваш e-mail:</label>
+					<input type="e-mail" id="user-e-mail" name="user-e-mail" placeholder="email@example.com">
 				</p>
 				<p>
 					<label for="message">Текст письма:</label>
-					<textarea id="message" name="user_message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+					<textarea id="message" name="user-message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
@@ -390,8 +390,12 @@
 
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Наше местоположение</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473154!2d37.52742931538804!3d55.6870340045307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571521899888!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 			<img src="img/map-big.png" width="960" height="559" alt="Офис магазина по адресу г. Москва, ул. Строителей, 15">
 			<button class="button-close" type="button" aria-label="Закрыть окно"></button>
 		</section>
+
+		<script src="js/message-popup.js"></script>
+		<script src="js/map-popup.js"></script>
   </body>
 </html>
