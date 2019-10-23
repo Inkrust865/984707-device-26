@@ -1146,28 +1146,46 @@ input[type="radio"].visually-hidden {
 	opacity: 0.7;
 }
 
-.footer-links .login-name::before {
-	background-image: url(../img/icons/footer-user.png);
+.footer-links a {
+	display: block;
+	position: relative;
 }
 
-.footer-links .login-link::before {
-	background-image: url(../img/icons/footer-user.png);
-}
-
-.footer-links .compare::before {
-	background-image: url(../img/icons/footer-compare.png);
-}
-
+.footer-links .login-name::before,
+.footer-links .login-link::before,
+.footer-links .compare::before,
 .footer-links .basket::before {
-	background-image: url(../img/icons/footer-cart.png);
+	content: "";
+
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+
+	background-image: none;
 }
 
-.footer-links a::before:hover,
-.footer-links a::before:focus {
+.footer-links .footer-link-icon {
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 1.5px;
+}
+
+.compare .footer-link-icon {
+	top: 10px;
+	left: 0;
+}
+
+.footer-links a:hover svg,
+.footer-links a:focus svg {
 	opacity: 0.6;
 }
 
-.footer-links a::before:active {
+.footer-links a:active svg {
 	opacity: 0.3;
 }
 
@@ -1239,7 +1257,11 @@ input[type="radio"].visually-hidden {
 .footer-social li:not(:last-of-type) {
 	margin-right: 22px;
 }
+
 .social-button {
+	display: block;
+	position: relative;
+
 	opacity: 0.3;
 }
 
@@ -1279,24 +1301,35 @@ input[type="radio"].visually-hidden {
 	height: 35px;
 }
 
+.footer-copyright a {
+	display: block;
+	position: relative;
+}
+
 .footer-copyright a::before {
 	content: "";
 
+	display: block;
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 27px;
-	height: 35px;
-
-	background-image: url(../img/icons/logo-html.png);
+	left: 0;
+	bottom: 0;
+	z-index: 100;
 }
 
-.footer-copyright:hover,
-.footer-copyright:focus {
+.footer-copyright-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.footer-copyright:hover .footer-copyright-icon,
+.footer-copyright:focus .footer-copyright-icon {
 	opacity: 0.6;
 }
 
-.footer-copyright:active {
+.footer-copyright:active .footer-copyright-icon {
 	opacity: 0.3;
 }
 
@@ -1569,6 +1602,8 @@ body {
 }
 
 .header-logo {
+	display: block;
+	position: relative;
 	width: 163px;
 	height: 35px;
 
