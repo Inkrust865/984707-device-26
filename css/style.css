@@ -2,28 +2,28 @@
 	font-family: "Gilroy-ExtraBold";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Gilroy-Light";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../fonts/gilroylight.woff2") format("woff2");
+	src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
 	font-family: "OpenSans-Regular";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../fonts/opensans.woff2") format("woff2");
+	src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
 	font-family: "OpenSans-Light";
 	font-weight: normal;
 	font-style: normal;
-	src: url("../fonts/opensanslight.woff2") format("woff2");
+	src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 
 body {
@@ -70,7 +70,7 @@ input[type="radio"].visually-hidden {
 .button {
 	display: inline-block;
 
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 4px;
@@ -303,7 +303,7 @@ input[type="radio"].visually-hidden {
 }
 
 .link-uppercase {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 3.6px;
@@ -389,7 +389,7 @@ input[type="radio"].visually-hidden {
 	height: 180px;
 	z-index: 1;
 
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 179.2px;
 	line-height: 179.2px;
 	color: #ffffff;
@@ -408,7 +408,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-good-item b {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 47px;
 	line-height: 56px;
 	color: #000000;
@@ -472,7 +472,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-good-item .property-value {
-	font-family: "Gilroy-Light";
+	font-family: "Gilroy-Light", "Tahoma", sans-serif;
 	font-size: 36px;
 	line-height: 48px;
 	color: #000000;
@@ -488,7 +488,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-goods h3 {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	color: #000000;
@@ -579,7 +579,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services h3 {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
 	color: #000000;
@@ -625,7 +625,7 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns h2 {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
 	color: #000000;
@@ -671,7 +671,7 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery-partners-list {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 16px;
 	line-height: 40px;
 	color: #000000;
@@ -727,7 +727,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 47px;
 	line-height: 48px;
 	color: #000000;
@@ -791,7 +791,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-title {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.8px;
@@ -806,7 +806,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-legend {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 
@@ -823,7 +823,7 @@ input[type="radio"].visually-hidden {
 
 .filter-range {
 	width: 100%;
-	min-height: 35px;
+	min-height: 36px;
 }
 
 .filter-input + label {
@@ -908,7 +908,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting h2 {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 3.6px;
@@ -973,7 +973,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-title {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.3px;
@@ -1014,7 +1014,7 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 
@@ -1046,7 +1046,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-price {
-	font-family: "Gilroy-Light";
+	font-family: "Gilroy-Light", "Tahoma", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #464646;
@@ -1074,7 +1074,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 4px;
@@ -1213,7 +1213,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-services-navigation a {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -1422,13 +1422,13 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback label {
-	font-family: "Gilroy-ExtraBold";
+	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 
 	margin-bottom: 7px;
 }
 
 .feedback-form input[type="text"],
-.feedback-form input[type="e-mail"] {
+.feedback-form input[type="email"] {
 	width: 360px;
 	padding: 15px 20px;
 }
@@ -1439,7 +1439,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-form input[type="text"],
-.feedback-form input[type="e-mail"],
+.feedback-form input[type="email"],
 .feedback-form textarea {
 	font-family: "OpenSans-Regular", Arial, sans-serif;
 	color: #464646;
@@ -1454,13 +1454,13 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-form input[type="text"]:hover,
-.feedback-form input[type="e-mail"]:hover,
+.feedback-form input[type="email"]:hover,
 .feedback-form textarea:hover {
 	background-color: #ebebeb;
 }
 
 .feedback-form input[type="text"]:focus,
-.feedback-form input[type="e-mail"]:focus,
+.feedback-form input[type="email"]:focus,
 .feedback-form textarea:focus {
 	opacity: 1;
 
@@ -1473,7 +1473,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-form input[type="text"]:disabled,
-.feedback-form input[type="e-mail"]:disabled,
+.feedback-form input[type="email"]:disabled,
 .feedback-form textarea:disabled {
 	opacity: 0.5;
 
@@ -1622,7 +1622,7 @@ body {
 	    -ms-flex-align: center;
 	        align-items: center;
 
-	margin-top: 10px;
+	margin-top: 19px;
 	margin-bottom: 25px;
 	/*---- Временно для сетки ----*/
 	min-height: 50px;
@@ -2220,7 +2220,7 @@ body {
 	        justify-content: flex-start;
 
 	width: 267px;
-	margin-top: 71px;
+	margin-top: 70px;
 }
 
 .filter {
@@ -2290,7 +2290,7 @@ body {
 	    -ms-flex-align: start;
 	        align-items: flex-start;
 
-	margin-top: 30px;
+	margin-top: 32px;
 
 	min-height: 45px;
 }
@@ -2302,7 +2302,7 @@ body {
 
 .pagination-list-wrapper {
 	width: 760px;
-	margin: 40px 0 75px 40px;
+	margin: 36px 0 75px 40px;
 }
 
 .pagination-list {
