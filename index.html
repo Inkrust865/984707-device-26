@@ -16,7 +16,7 @@
 						<div class="navigation-line-wrapper">
 							<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 								<input class="search" type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-								<button class="button-search temporarily-hidden" type="submit">Найти</button>
+								<button class="button-search hidden" type="submit">Найти</button>
 							</form>
 	
 							<ul class="user-navigation">
@@ -32,7 +32,7 @@
 						<ul class="site-navigation">
 							<li class="catalog-navigation">
 								<a class="link-uppercase catalog-link" href="catalog.html">Каталог товаров</a>
-								<ul class="additional-site-nav temporarily-hidden">
+								<ul class="additional-site-nav hidden">
 									<li>
 										<ul class="second-site-nav">
 											<li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -113,7 +113,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="slider-good-item second-slide temporarily-hidden">
+							<li class="slider-good-item second-slide hidden">
 								<div class="imagine-part">
 									<img src="img/products_slider/slider-2.png" width="384" height="486" alt="Изображение фитнес-браслета">
 								</div>
@@ -139,7 +139,7 @@
 									</ul>
 								</div>
 							</li>
-							<li class="slider-good-item third-slide temporarily-hidden">
+							<li class="slider-good-item third-slide hidden">
 								<div class="imagine-part">
 									<img src="img/products_slider/slider-3.png" width="486" height="384" alt="Изображение квадрокоптера">
 								</div>
@@ -178,7 +178,7 @@
 					<h2 class="visually-hidden">Популярные товары</h2>
 					<ul class="popular-goods-list">
 						<li class="popular-good-item">
-							<a href="catalog.html">
+							<a class="popular-good-item-link" href="catalog.html">
 								<h3>Виртуальная реальность</h3>
 								<div class="popular-good-icon">
 									<img src="img/popular/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
@@ -186,7 +186,7 @@
 							</a>
 						</li>
 						<li class="popular-good-item">
-							<a href="catalog.html">
+							<a class="popular-good-item-link" href="catalog.html">
 								<h3>Моноподы <br>для селфи</h3>
 								<div class="popular-good-icon">
 									<img src="img/popular/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
@@ -194,7 +194,7 @@
 							</a>
 						</li>
 						<li class="popular-good-item">
-							<a href="catalog.html">
+							<a class="popular-good-item-link" href="catalog.html">
 								<h3>Экшн-камеры</h3>
 								<div class="popular-good-icon">
 									<img src="img/popular/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
@@ -202,7 +202,7 @@
 							</a>
 						</li>
 						<li class="popular-good-item">
-							<a href="catalog.html">
+							<a class="popular-good-item-link" href="catalog.html">
 								<h3>Фитнес-браслеты</h3>
 								<div class="popular-good-icon">
 									<img src="img/popular/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
@@ -210,7 +210,7 @@
 							</a>
 						</li>
 						<li class="popular-good-item">
-							<a href="catalog.html">
+							<a class="popular-good-item-link" href="catalog.html">
 								<h3>Умные часы</h3>
 								<div class="popular-good-icon">
 									<img src="img/popular/popular-5.svg" width="56" height="98" alt="Умные часы">
@@ -218,7 +218,7 @@
 							</a>
 						</li>
 						<li class="popular-good-item">
-							<a href="catalog.html">
+							<a class="popular-good-item-link" href="catalog.html">
 								<h3>Квадрокоптеры</h3>
 								<div class="popular-good-icon">
 									<img src="img/popular/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
@@ -244,13 +244,13 @@
 								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на 	ваш этаж.
 							</p>
 						</li>
-						<li class="service-item warranty-item temporarily-hidden">
+						<li class="service-item warranty-item hidden">
 							<h3>Гарантия</h3>
 							<p>
 								Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
 							</p>
 						</li>
-						<li class="service-item credit-item temporarily-hidden">
+						<li class="service-item credit-item hidden">
 							<h3>Кредит</h3>
 							<p>
 								Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего 	банка, разумеется.
@@ -308,7 +308,7 @@
 						<button class="button-map" type="button">
 							<img src="img/map.png" width="560" height="222" alt="Офис магазина по адресу г. Москва, ул. Строителей, 15">
 						</button>
-						<button class="button button-bottom button-feedback" type="button">Напишите нам</button>
+						<a class="button button-bottom button-feedback" href="writeus.html">Напишите нам</a>
 					</section>
 				</div>
 			</div>
@@ -324,7 +324,7 @@
 					<div class="footer-links">
 						<ul class="user-navigation">
 							<li>
-								<a class="login-link" href="">
+								<a class="login-link footer-link" href="">
 									<svg class="footer-link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
 									<path fill="#ffc600" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
@@ -335,7 +335,7 @@
 							</li>
 						</ul>
 						<div class="additional-user-nav">
-							<a class="compare" href="#">
+							<a class="compare footer-link" href="#">
 								<svg class="footer-link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
 								<rect x="8" y="2" width="1.984" height="8" fill="#ffc600"/>
@@ -344,7 +344,7 @@
 								</svg>
 								<span>Сравнить</span>
 							</a>
-							<a class="basket" href="#">
+							<a class="basket footer-link" href="#">
 								<svg class="footer-link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
 								<g>
@@ -377,7 +377,7 @@
 						</ul>
 					</div>
 					<div class="footer-contacts footer-telephone">
-						<p>Тел.: +7 (495) 495-95-95</p>
+						<p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
 					</div>
 				</div>
 	

@@ -319,7 +319,7 @@ input[type="radio"].visually-hidden {
 	background-color: #f7e296;
 
 	list-style: none;
-	padding: 30px 60px 36px;
+	padding: 30px 60px 40px;
 }
 
 .second-site-nav {
@@ -498,22 +498,22 @@ input[type="radio"].visually-hidden {
 	background-color: #f7e296;
 }
 
-.popular-good-item a {
+.popular-good-item-link {
 	color: #000000;
 }
 
-.popular-goods a:hover,
-.popular-goods a:focus {
+.popular-good-item-link:hover,
+.popular-good-item-link:focus {
 	color: #000000;
 }
 
-.popular-goods a:hover .popular-good-icon,
-.popular-goods a:focus .popular-good-icon {
+.popular-good-item-link:hover .popular-good-icon,
+.popular-good-item-link:focus .popular-good-icon {
 	background-color: #f0c52e;
 }
 
-.popular-goods a:active h3,
-.popular-goods a:active img {
+.popular-good-item-link:active h3,
+.popular-good-item-link:active img {
 	opacity: 0.3;
 }
 
@@ -982,6 +982,9 @@ input[type="radio"].visually-hidden {
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.3px;
+}
+
+.catalog-item-title a {
 	color: #000000;
 }
 
@@ -1141,7 +1144,7 @@ input[type="radio"].visually-hidden {
 	margin-right: 44px;
 }
 
-.footer-links a span {
+.footer-links span {
 	color: #ffffff;
 	opacity: 0.7;
 }
@@ -1180,26 +1183,30 @@ input[type="radio"].visually-hidden {
 	left: 0;
 }
 
-.footer-links a:hover svg,
-.footer-links a:focus svg {
+.footer-link:hover svg,
+.footer-link:focus svg {
 	opacity: 0.6;
 }
 
-.footer-links a:active svg {
+.footer-link:active svg {
 	opacity: 0.3;
 }
 
-.footer-links a:hover span,
-.footer-links a:focus span{
+.footer-link:hover span,
+.footer-link:focus span{
 	opacity: 1;
 }
 
-.footer-links a:active span{
+.footer-link:active span{
 	opacity: 0.3;
 }
 
 .footer-middle p {
 	margin: 0;
+}
+
+.footer-middle a {
+	color: inherit;
 }
 
 .footer-services-navigation {
@@ -2086,7 +2093,7 @@ body {
 
 /*---- Сетка страницы Каталога ----*/
 
-.inner-page main .container {
+.inner-page-main .container {
 	padding-left: 80px;
 	width: 1100px;
 }
@@ -2368,8 +2375,8 @@ body {
 	        flex-direction: column;
 }
 
-/*---- Скрытые элементы - позже подкорректировать ----*/
+/*---- Скрытые элементы ----*/
 
-.temporarily-hidden {
+.hidden {
 	display: none;
 }
