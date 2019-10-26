@@ -972,6 +972,11 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.catalog-item:hover .catalog-item-options,
+.catalog-item:focus .catalog-item-options {
+	display: block;
+}
+
 .catalog-item-title {
 	font-family: "Gilroy-ExtraBold", "Tahoma", sans-serif;
 	font-size: 18px;
@@ -1033,16 +1038,11 @@ input[type="radio"].visually-hidden {
 	background-color: rgba(243, 243, 243, 0.7);
 }
 
-.catalog-item-image:hover + .catalog-item-options,
-.catalog-item-image:focus + .catalog-item-options {
-}
-
 .catalog-item-options .button {
 	position: absolute;
 	top: 170px;
 	left: 80px;
 	width: 200px;
-	height: 24px;
 }
 
 .catalog-item-price {
