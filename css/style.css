@@ -82,8 +82,8 @@ input[type="radio"].visually-hidden {
 	width: 220px;
 	padding: 8px 10px;
 	padding-left: 13.7px;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, #f0c52e), color-stop(60%, #f0c52e), color-stop(60%, transparent));
 	background-image: -o-linear-gradient(top, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, #f0c52e), color-stop(60%, #f0c52e), color-stop(60%, transparent));
 	background-image: linear-gradient(180deg, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
 	background-color: transparent;
 	border: none;
@@ -2118,8 +2118,8 @@ body {
 }
 
 .titles-wrapper {
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #dbdbdb), color-stop(40%, #ebebeb));
 	background-image: -o-linear-gradient(left, #dbdbdb 40%, #ebebeb 40%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #dbdbdb), color-stop(40%, #ebebeb));
 	background-image: linear-gradient(90deg, #dbdbdb 40%, #ebebeb 40%);
 
 	min-height: 70px;
@@ -2207,8 +2207,8 @@ body {
 }
 
 .catalog-columns {
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #eeeeee), color-stop(40%, #ffffff));
 	background-image: -o-linear-gradient(left, #eeeeee 40%, #ffffff 40%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #eeeeee), color-stop(40%, #ffffff));
 	background-image: linear-gradient(90deg, #eeeeee 40%, #ffffff 40%);
 }
 
