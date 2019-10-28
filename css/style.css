@@ -206,6 +206,7 @@ input[type="radio"].visually-hidden {
 
 .login-link {
 	position: relative;
+
 	padding-left: 27px;
 }
 
@@ -246,6 +247,10 @@ input[type="radio"].visually-hidden {
 
 	background-image: url(../img/icons/user.svg);
 	background-repeat: no-repeat;
+}
+
+.footer-links .login-name::before {
+	background-image: url(../img/icons/user-footer.svg);
 }
 
 .additional-user-nav a {
@@ -499,7 +504,21 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-good-item-link {
+	display: block;
+	position: relative;
+
 	color: #000000;
+}
+
+.popular-good-item-link::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
 }
 
 .popular-good-item-link:hover,
@@ -717,6 +736,22 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
+.inner-header-logo {
+	display: block;
+	position: relative;
+}
+
+.inner-header-logo::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
 .inner-header-logo:hover,
 .inner-header-logo:focus {
 	opacity: 0.6;
@@ -825,6 +860,8 @@ input[type="radio"].visually-hidden {
 	width: 100%;
 	min-height: 36px;
 }
+
+/* ---- Multirange ---- */
 
 .filter-input + label {
 	position: relative;
@@ -1125,6 +1162,22 @@ input[type="radio"].visually-hidden {
 	opacity: 1;
 }
 
+.inner-footer-logo {
+	display: block;
+	position: relative;
+}
+
+.inner-footer-logo::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
 .inner-footer-logo:hover,
 .inner-footer-logo:focus {
 	opacity: 0.6;
@@ -1141,64 +1194,26 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-links li {
+	position: relative;
+
 	margin-right: 44px;
 }
 
-.footer-links span {
+.footer-link span {
 	color: #ffffff;
 	opacity: 0.7;
 }
 
-.footer-links a {
-	display: block;
-	position: relative;
+.footer-links .login-link::before {
+	background-image: url(../img/icons/user-footer.svg);
 }
 
-.footer-links .login-name::before,
-.footer-links .login-link::before,
-.footer-links .compare::before,
+.footer-links .compare::before {
+	background-image: url(../img/icons/compare-footer.svg);
+}
+
 .footer-links .basket::before {
-	content: "";
-
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 100;
-
-	background-image: none;
-}
-
-.footer-links .footer-link-icon {
-	display: block;
-	position: absolute;
-	top: 9px;
-	left: 1.5px;
-}
-
-.compare .footer-link-icon {
-	top: 10px;
-	left: 0;
-}
-
-.footer-link:hover svg,
-.footer-link:focus svg {
-	opacity: 0.6;
-}
-
-.footer-link:active svg {
-	opacity: 0.3;
-}
-
-.footer-link:hover span,
-.footer-link:focus span{
-	opacity: 1;
-}
-
-.footer-link:active span{
-	opacity: 0.3;
+	background-image: url(../img/icons/cart-footer.svg);
 }
 
 .footer-middle p {
@@ -1303,40 +1318,35 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
 	position: relative;
-
-	width: 27px;
-	height: 35px;
 }
 
 .footer-copyright a {
 	display: block;
 	position: relative;
+	width: 27px;
+	height: 34px;
+	margin-right: 0;
+	margin-left: auto;
 }
 
 .footer-copyright a::before {
 	content: "";
 
-	display: block;
 	position: absolute;
 	top: 0;
 	right: 0;
-	left: 0;
-	bottom: 0;
-	z-index: 100;
+	width: 27px;
+	height: 34px;
+
+	background-image: url(../img/icons/logo-html.svg);
 }
 
-.footer-copyright-icon {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.footer-copyright:hover .footer-copyright-icon,
-.footer-copyright:focus .footer-copyright-icon {
+.footer-copyright a:hover,
+.footer-copyright a:focus {
 	opacity: 0.6;
 }
 
-.footer-copyright:active .footer-copyright-icon {
+.footer-copyright a:active {
 	opacity: 0.3;
 }
 
