@@ -115,7 +115,10 @@
 							<ul class="filter">
 								<li>
 									<h3 class="filter-legend">Стоимость</h3>
-									<input class="filter-range" type="range" multiple name="cost" min="0" max="8000" step="100" value="0, 5000" aria-label="Выбрать стоимость товара">
+									<div class="multirange">
+										<input class="visually-hidden filter-range" type="range" multiple name="cost" min="0" max="8000" step="100" value="0, 5000" aria-label="Выбрать стоимость товара">
+									</div>
+									
 								</li>
 							</ul>
 							<fieldset class="filter">

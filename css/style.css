@@ -93,8 +93,7 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
 	background-color: #f0c52e;
 	background-image: none;
 }
@@ -131,6 +130,10 @@ input[type="radio"].visually-hidden {
 	outline: none;
 }
 
+input[class="search"]:focus + button {
+	display: block;
+}
+
 .search-form {
 	position: relative;
 }
@@ -149,6 +152,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-search {
+	display: none;
+
 	background-color: transparent;
 	border: 2px solid #000000;
 	padding: 14px 18px;
@@ -156,8 +161,7 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.button-search:hover,
-.button-search:focus {
+.button-search:hover {
 	background-color: #000000;
 
 	color: #ffffff;
@@ -183,13 +187,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
 .user-navigation a:hover,
-.user-navigation a:focus,
 .additional-user-nav a:hover,
-.additional-user-nav a:focus,
-.feedback-nav a:hover,
-.feedback-nav a:focus {
+.feedback-nav a:hover {
 	opacity: 0.6;
 }
 
@@ -461,7 +461,6 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-navigation .slider-button:hover,
-.slider-navigation .slider-button:focus,
 .slider-navigation .slider-button:active {
 	-webkit-box-shadow: 
 		inset 0 0 0 3px #ffffff,
@@ -521,13 +520,11 @@ input[type="radio"].visually-hidden {
 	z-index: 100;
 }
 
-.popular-good-item-link:hover,
-.popular-good-item-link:focus {
+.popular-good-item-link:hover {
 	color: #000000;
 }
 
-.popular-good-item-link:hover .popular-good-icon,
-.popular-good-item-link:focus .popular-good-icon {
+.popular-good-item-link:hover .popular-good-icon {
 	background-color: #f0c52e;
 }
 
@@ -565,14 +562,12 @@ input[type="radio"].visually-hidden {
 }
 
 .services-button-current,
-.services-button-current:hover,
-.services-button-current:focus {
+.services-button-current:hover {
 	background-color: #000000;
 }
 
 .services-button-current .services-button,
-.services-button-current:hover .services-button,
-.services-button-current:focus .services-button {
+.services-button-current:hover .services-button {
 	color: #f7e184;
 	background-image: none;
 	background-color: #000000;
@@ -632,13 +627,11 @@ input[type="radio"].visually-hidden {
 }
 
 .partner-item:hover .black-image,
-.partner-item:focus .black-image,
 .partner-item:active .black-image {
 	display: none;
 }
 
 .partner-item:hover .color-image,
-.partner-item:focus .color-image,
 .partner-item:active .color-image {
 	display: block;
 }
@@ -752,8 +745,7 @@ input[type="radio"].visually-hidden {
 	z-index: 100;
 }
 
-.inner-header-logo:hover,
-.inner-header-logo:focus {
+.inner-header-logo:hover {
 	opacity: 0.6;
 }
 
@@ -800,8 +792,7 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 }
 
-.breadcrumbs a:hover,
-.breadcrubs a:focus {
+.breadcrumbs a:hover {
 	opacity: 0.6;
 }
 
@@ -856,12 +847,20 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
-.filter-range {
+/* ---- Multirange ---- */
+
+.multirange {
+	position: relative;
+
 	width: 100%;
 	min-height: 36px;
 }
 
-/* ---- Multirange ---- */
+.filter-range::before {
+	content: "";
+
+	position: absol;
+}
 
 .filter-input + label {
 	position: relative;
@@ -921,9 +920,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input:hover + label::before,
-.filter-input:focus + label::before,
-.filter-input:hover + label::after,
-.filter-input:focus + label::after {
+.filter-input:hover + label::after {
 	opacity: 0.6;
 }
 
@@ -968,8 +965,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
-.sorting-list button:hover,
-.sorting-list button:focus {
+.sorting-list button:hover {
 	opacity: 0.6;
 }
 
@@ -1009,8 +1005,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.catalog-item:hover .catalog-item-options,
-.catalog-item:focus .catalog-item-options {
+.catalog-item:hover .catalog-item-options {
 	display: block;
 }
 
@@ -1104,8 +1099,7 @@ input[type="radio"].visually-hidden {
 	opacity: 0.5;
 }
 
-.catalog-item .button-comparison:hover,
-.catalog-item .button-comparison:focus {
+.catalog-item .button-comparison:hover {
 	opacity: 1;
 }
 
@@ -1136,9 +1130,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list .button-back:hover,
-.pagination-list .button-back:focus,
-.pagination-list .button-next:hover,
-.pagination-list .button-next:focus {
+.pagination-list .button-next:hover{
 	background-color: #d9d9d9;
 }
 
@@ -1153,8 +1145,7 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
-.pages-list .button-page:hover,
-.pages-list .button-page:focus {
+.pages-list .button-page:hover {
 	opacity: 0.6;
 }
 
@@ -1178,8 +1169,7 @@ input[type="radio"].visually-hidden {
 	z-index: 100;
 }
 
-.inner-footer-logo:hover,
-.inner-footer-logo:focus {
+.inner-footer-logo:hover {
 	opacity: 0.6;
 }
 
@@ -1199,54 +1189,32 @@ input[type="radio"].visually-hidden {
 	margin-right: 44px;
 }
 
-.footer-link span {
+.footer-links .footer-link {
+	display: block;
+	position: relative;
+
 	color: #ffffff;
 	opacity: 0.7;
 }
 
-.footer-link {
-	display: block;
-	position: relative;
-
-	background-repeat: no-repeat;
-	background-position: 0 9px;
-}
-
-.footer-links .login-link {
+.footer-links .login-link::before {
 	background-image: url(../img/icons/user-footer.svg);
-}
-
-.footer-links .compare {
-	background-image: url(../img/icons/compare-footer.svg);
+	top: 9px;
 }
 
 .footer-links .compare::before {
-	background-image: none;
-}
-
-.footer-links .basket {
-	background-image: url(../img/icons/cart-footer.svg);
+	background-image: url(../img/icons/compare-footer.svg);
 }
 
 .footer-links .basket::before {
-	background-image: none;
-}
-
-.footer-link::before {
-	content: "";
-
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 100;
-
-	background-image: none;
+	background-image: url(../img/icons/cart-footer.svg);
 }
 
 .footer-link:hover {
+	opacity: 1;
+}
+
+.footer-link:hover .footer-link::before {
 	opacity: 0.6;
 }
 
@@ -1285,8 +1253,7 @@ input[type="radio"].visually-hidden {
 	margin-left: 3.5px;
 }
 
-.footer-services-navigation a:hover,
-.footer-services-navigation a:focus {
+.footer-services-navigation a:hover {
 	opacity: 0.6;
 }
 
@@ -1345,8 +1312,7 @@ input[type="radio"].visually-hidden {
 	background-image: url(../img/icons/twitter.svg);
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button:hover {
 	opacity: 0.6;
 }
 
@@ -1379,8 +1345,7 @@ input[type="radio"].visually-hidden {
 	background-image: url(../img/icons/logo-html.svg);
 }
 
-.footer-copyright a:hover,
-.footer-copyright a:focus {
+.footer-copyright a:hover {
 	opacity: 0.6;
 }
 
@@ -1423,8 +1388,7 @@ input[type="radio"].visually-hidden {
 	z-index: 3;
 }
 
-.modal .button-close:hover,
-.modal .button-close:focus {
+.modal .button-close:hover {
 	opacity: 1;
 }
 
