@@ -93,12 +93,12 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
-.button:hover {
+.button:not(.services-button):hover {
 	background-color: #f0c52e;
 	background-image: none;
 }
 
-.button:active {
+.button:not(.services-button):active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -123,19 +123,21 @@ input[type="radio"].visually-hidden {
 	opacity: 0.6;
 }
 
-.main-navigation input[class="search"]:focus {
+.search-form {
+	position: relative;
+}
+
+.search-form:focus input[class="search"] {
 	opacity: 1;
 
 	border-bottom: 2px solid #000000;
 	outline: none;
+
+	pointer-events: none;
 }
 
-input[class="search"]:focus + button {
+.search-form:focus button {
 	display: block;
-}
-
-.search-form {
-	position: relative;
 }
 
 .search-form::before {
@@ -187,8 +189,8 @@ input[class="search"]:focus + button {
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover,
-.additional-user-nav a:hover,
+.user-navigation a:not(.footer-link):hover,
+.additional-user-nav a:not(.footer-link):hover,
 .feedback-nav a:hover {
 	opacity: 0.6;
 }
@@ -549,10 +551,23 @@ input[class="search"]:focus + button {
 	width: 160px;
 	padding: 8px 0;
 	padding-left: 3.7px;
+
+	pointer-events: none;
+}
+
+.services-bookmark {
+	width: 160px;
+	cursor: pointer;
+}
+
+.services-bookmark:hover .services-button {
+	background-color: #f0c52e;
+	background-image: none;
 }
 
 .services-bookmark:active {
 	background-color: #000000;
+	width: 100%;
 }
 
 .services-bookmark:active .services-button {
@@ -856,10 +871,59 @@ input[class="search"]:focus + button {
 	min-height: 36px;
 }
 
-.filter-range::before {
+.multirange::before {
 	content: "";
 
-	position: absol;
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 200px;
+	height: 2px;
+
+	background-color: #dbdbdb;
+}
+
+.multirange::after {
+	content: "";
+
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 93px;
+	height: 2px;
+
+	background-color: #91c92f;
+}
+
+.filter-range-marker {
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	width: 4px;
+	height: 4px;
+
+	background-color: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+
+	z-index: 5;
+}
+
+.filter-range-marker::after {
+	content: "0";
+
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 0;
+
+	color: #000000;
+}
+
+.max-value-marker {
+	left: 100px;
 }
 
 .filter-input + label {
@@ -1214,7 +1278,7 @@ input[class="search"]:focus + button {
 	opacity: 1;
 }
 
-.footer-link:hover .footer-link::before {
+.footer-link:hover::before {
 	opacity: 0.6;
 }
 
