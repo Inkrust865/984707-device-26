@@ -107,6 +107,10 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
+.search-form {
+	position: relative;
+}
+
 .main-navigation input[class="search"] {
 	opacity: 0.3;
 
@@ -120,22 +124,19 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 0.1px;
 }
 
-.main-navigation input[class="search"]:hover {
+input[class="search"]:hover {
 	opacity: 0.6;
 }
 
-.search-form {
-	position: relative;
-}
-
-.search-form:focus-within input[class="search"] {
+input[class="search"]:focus {
 	opacity: 1;
 
 	border-bottom: 2px solid #000000;
 	outline: none;
 }
 
-.search-form:focus-within button {
+input[class="search"]:focus + button[class="button-search"],
+button[class="button-search"]:active {
 	display: block;
 }
 
@@ -205,6 +206,10 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.user-navigation li {
+	line-height: 49px;
+}
+
 .login-link {
 	position: relative;
 
@@ -259,13 +264,19 @@ input[type="radio"].visually-hidden {
 .additional-user-nav a {
 	position: relative;
 	padding-left: 20px;
+
+	line-height: 49px;
+}
+
+.aaditional-user-nav a::before {
+	top: 19.5px;
 }
 
 .additional-user-nav .compare::before {
 	content: "";
 
 	position: absolute;
-	top: 10px;
+	top: 19.5px;
 	left: 0;
 	width: 10px;
 	height: 10px;
@@ -282,7 +293,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 
 	position: absolute;
-	top: 8px;
+	top: 18px;
 	left: 1px;
 	width: 12px;
 	height: 12px;
@@ -874,7 +885,7 @@ input[type="radio"].visually-hidden {
 
 	width: 100%;
 	min-height: 39px;
-	margin-bottom: 45px;
+	margin-bottom: 47px;
 }
 
 .multirange::before {
@@ -1271,6 +1282,8 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	margin-right: 44px;
+
+	line-height: 30px;
 }
 
 .footer-links .footer-link {
@@ -1278,6 +1291,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	color: rgba(255, 255, 255, 0.7);
+	line-height: 30px;
 }
 
 .footer-links .login-link::before {
@@ -1287,10 +1301,12 @@ input[type="radio"].visually-hidden {
 
 .footer-links .compare::before {
 	background-image: url(../img/icons/compare-footer.svg);
+	top: 10px;
 }
 
 .footer-links .basket::before {
 	background-image: url(../img/icons/cart-footer.svg);
+	top: 8px;
 }
 
 .footer-link:hover {
@@ -1315,6 +1331,8 @@ input[type="radio"].visually-hidden {
 
 .footer-services-navigation {
 	margin-top: 5px;
+	margin-left: 70px;
+	margin-right: 70px;
 }
 
 .footer-services-navigation ul,
@@ -1722,9 +1740,9 @@ body {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 
 	margin-top: 19px;
 	margin-bottom: 25px;
@@ -1771,14 +1789,17 @@ body {
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
 	        justify-content: flex-end;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 
 	width: 220px;
 	margin: 0;
 	padding: 0;
 }
 
-.additional-user-nav a:not(:last-of-type) {
-	margin-right: 39px;
+.additional-user-nav a:not(:nth-of-type(2n-1)) {
+	margin-left: 39px;
 }
 
 .site-navigation {
@@ -1900,6 +1921,8 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 
 	margin: 0;
 	padding: 0;
@@ -1915,6 +1938,7 @@ body {
 	        flex-direction: column;
 
 	margin-right: 80px;
+	margin-bottom: 18px;
 }
 
 .property-item:last-of-type {
@@ -1929,7 +1953,7 @@ body {
 
 .popular-goods {
 	width: 100%;
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 .popular-goods-list {
@@ -1939,9 +1963,15 @@ body {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 
 	padding: 0;
 	margin: 0;
+}
+
+.popular-good-item {
+	margin-bottom: 40px;
 }
 
 .popular-good-item a {
@@ -2036,6 +2066,7 @@ body {
 	width: 460px;
 	margin: 0;
 	margin-top: 30px;
+	margin-bottom: 40px;
 }
 
 .partners {
@@ -2138,12 +2169,15 @@ body {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
 	margin: 0;
 	padding: 0;
 }
 
-.footer-services-navigation li:not(:nth-of-type(3n)) {
+.footer-services-navigation li:not(:last-of-type) {
 	margin-right: 30px;
 }
 
@@ -2343,6 +2377,8 @@ body {
 
 .filter-form .button {
 	width: 200px;
+	margin-bottom: 40px;
+
 	text-align: center;
 }
 
