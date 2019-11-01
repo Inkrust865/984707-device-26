@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body class="inner-page">
 		<header class="main-header">
@@ -115,8 +115,8 @@
 							<ul class="filter">
 								<li>
 									<h3 class="filter-legend">Стоимость</h3>
-									<div class="multirange">
-										<input class="visually-hidden filter-range" type="range" multiple name="cost" min="0" max="8000" step="100" value="0, 5000" aria-label="Выбрать стоимость товара">
+									<div class="multirange" tabindex="0">
+										<input class="visually-hidden filter-range" type="range" name="cost" min="0" max="8000" step="100" value="0" aria-label="Выбрать стоимость товара">
 										<span class="filter-range-marker min-value-marker"></span>
 										<span class="filter-range-marker max-value-marker"></span>
 									</div>
@@ -127,24 +127,24 @@
 								<legend class="filter-legend">Цвет</legend>
 								<ul>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="checkbox_1" name="black" checked>
+										<input class="visually-hidden filter-input filter-input-checkbox" tabindex="-1" type="checkbox" id="checkbox_1" name="black" checked>
 										<label for="checkbox_1" tabindex="0">Черный</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="checkbox_2" name="white">
-										<label for="checkbox_2">Белый</label>
+										<input class="visually-hidden filter-input filter-input-checkbox" tabindex="-1" type="checkbox" id="checkbox_2" name="white">
+										<label for="checkbox_2" tabindex="0">Белый</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="checkbox_3" name="blue" checked>
-										<label for="checkbox_3">Синий</label>
+										<input class="visually-hidden filter-input filter-input-checkbox" tabindex="-1" type="checkbox" id="checkbox_3" name="blue" checked>
+										<label for="checkbox_3" tabindex="0">Синий</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="checkbox_4" name="red" checked>
-										<label for="checkbox_4">Красный</label>
+										<input class="visually-hidden filter-input filter-input-checkbox" tabindex="-1" type="checkbox" id="checkbox_4" name="red" checked>
+										<label for="checkbox_4" tabindex="0">Красный</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="checkbox_5" name="pink">
-										<label for="checkbox_5">Розовый</label>
+										<input class="visually-hidden filter-input filter-input-checkbox" tabindex="-1" type="checkbox" id="checkbox_5" name="pink">
+										<label for="checkbox_5" tabindex="0">Розовый</label>
 									</li>
 								</ul>
 							</fieldset>
@@ -153,11 +153,11 @@
 								<ul>
 									<li class="filter-option">
 										<input class="visually-hidden filter-input filter-input-radio" type="radio" id="radio_1" name="bluetooth" value="in stock" 		checked>
-										<label for="radio_1">Есть</label>
+										<label for="radio_1" tabindex="0">Есть</label>
 									</li>
 									<li class="filter-option">
 										<input class="visually-hidden filter-input filter-input-radio" type="radio" id="radio_2" value="not in stock" name="bluetooth">
-										<label for="radio_2">Нет</label>
+										<label for="radio_2" tabindex="0">Нет</label>
 									</li>
 								</ul>
 							</fieldset>
@@ -246,13 +246,13 @@
 					<div class="footer-links">
 						<ul class="user-navigation">
 							<li>
-								<a class="login-name footer-link" href="#"><span>Валентин Петухов</span></a>
+								<a class="login-name footer-link" href="#">Валентин Петухов</a>
 							</li>
-							<li><a class="login-link footer-link" href=""><span>Войти</span></a></li>
+							<li><a class="login-link footer-link" href="">Войти</a></li>
 						</ul>
 						<div class="additional-user-nav">
-							<a class="compare footer-link" href="#"><span>Сравнить</span></a>
-							<a class="basket footer-link" href="#"><span>Корзина</span></a>
+							<a class="compare footer-link" href="#">Сравнить</a>
+							<a class="basket footer-link" href="#">Корзина</a>
 						</div>
 					</div>
 				</div>
@@ -281,9 +281,9 @@
 					</div>
 					<div class="footer-social">
 						<ul>
-							<li><a class="social-button facebook-button" href="#" aria-label="Device в Фейсбук"></a></li>
-							<li><a class="social-button instagram-button" href="#" aria-label="Device в Инстаграм"></a></li>
-							<li><a class="social-button twitter-button" href="#" aria-label="Device в Твиттер"></a></li>
+							<li><a class="social-button facebook-button" href="#" aria-label="Device в Фейсбук" tabindex="0"></a></li>
+							<li><a class="social-button instagram-button" href="#" aria-label="Device в Инстаграм" tabindex="0"></a></li>
+							<li><a class="social-button twitter-button" href="#" aria-label="Device в Твиттер" tabindex="0"></a></li>
 						</ul>
 					</div>
 					<div class="footer-copyright">
