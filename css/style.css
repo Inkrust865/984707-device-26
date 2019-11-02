@@ -620,7 +620,7 @@ button[class="button-search"]:active {
 	width: 136px;
 	height: 164px;
 
-	background-image: url(../img/services_slider/delivery.svg);
+	background-image: url(../img/services-slider/delivery.svg);
 }
 
 .services h3 {
@@ -637,7 +637,7 @@ button[class="button-search"]:active {
 	top: -12px;
 	right: 45px;
 
-	background-image: url(../img/services_slider/warranty.svg);
+	background-image: url(../img/services-slider/warranty.svg);
 }
 
 .credit-item::after {
@@ -646,7 +646,7 @@ button[class="button-search"]:active {
 	top: -12px;
 	right: 70px;
 
-	background-image: url(../img/services_slider/credit.svg);
+	background-image: url(../img/services-slider/credit.svg);
 }
 
 .partners-list {
