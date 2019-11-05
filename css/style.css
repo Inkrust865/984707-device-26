@@ -46,6 +46,8 @@ a {
 img {
 	max-width: 100%;
 	height: auto;
+
+	vertical-align: top;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -378,6 +380,7 @@ button[class="button-search"]:active {
 
 .slider-good-item img {
 	background-color: transparent;
+	max-height: 486px;
 }
 
 .second-slide .imagine-part {
@@ -394,6 +397,7 @@ button[class="button-search"]:active {
 	position: relative;
 
 	padding-top: 78px;
+	margin-left: -15px;
 }
 
 .slider-good-item .description-part::before {
@@ -995,9 +999,16 @@ button[class="button-search"]:active {
 }
 
 .filter-range-marker {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-weight: 300;
@@ -1007,6 +1018,8 @@ button[class="button-search"]:active {
 }
 
 .filter-range-marker span {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-top: 13px;
 }
@@ -1089,6 +1102,10 @@ button[class="button-search"]:active {
 .filter-input:hover + label::before,
 .filter-input:hover + label::after {
 	opacity: 0.6;
+}
+
+.filter-input:focus +label::before {
+	outline: rgb(59, 153, 252) auto 5px;
 }
 
 .filter-input:active + label::before,
@@ -1969,11 +1986,11 @@ body {
 }
 
 .slider-good-item .imagine-part {
-	width: 440px;
+	width: 526px;
 }
 
 .slider-good-item .description-part {
-	width: 500px;
+	width: 503px;
 }
 
 .good-item-navigation {
@@ -2227,7 +2244,7 @@ body {
 	    -ms-flex-align: center;
 	        align-items: center;
 
-	margin-top: 18px;
+	margin-top: 28px;
 	margin-bottom: 60px;
 }
 
