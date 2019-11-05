@@ -548,10 +548,9 @@ button[class="button-search"]:active {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 160px;
-	height: 160px;
-
-	background-color: #f7e296;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
 }
 
 .popular-good-item-link::after {
@@ -560,10 +559,14 @@ button[class="button-search"]:active {
 	position: absolute;
 	top: 0;
 	left: 0;
+	bottom: 0;
+	right: 0;
 	width: 160px;
 	height: 160px;
+	z-index: 100;
 
 	background-image: url(../img/popular/popular-1.svg);
+	background-color: #f7e296;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
@@ -597,7 +600,7 @@ button[class="button-search"]:active {
 	color: #000000;
 }
 
-.popular-good-item-link:hover::before {
+.popular-good-item-link:hover::after {
 	background-color: #f0c52e;
 }
 
@@ -1104,8 +1107,9 @@ button[class="button-search"]:active {
 	opacity: 0.6;
 }
 
-.filter-input:focus +label::before {
-	outline: rgb(59, 153, 252) auto 5px;
+.filter-input:focus +label::before,
+.filter-input:focus + label::after {
+	opacity: 0.6;
 }
 
 .filter-input:active + label::before,
