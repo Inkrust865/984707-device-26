@@ -1207,6 +1207,10 @@ button[class="button-search"]:active {
 	display: block;
 }
 
+.catalog-item:focus-within .catalog-item-options {
+	display: block;
+}
+
 .catalog-item-title {
 	font-family: "Gilroy", "Tahoma", sans-serif;
 	font-weight: 800;
